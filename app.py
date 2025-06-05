@@ -50,7 +50,7 @@ def checkout():
                 final_value = total_value
                 total_value = 0
                 order = []
-                return render_template('closure.html', final_value=final_value)
+                return render_template('encerramento.html', final_value=final_value)
 
     return render_template('checkout.html', total_value=total_value, order=order)
 
