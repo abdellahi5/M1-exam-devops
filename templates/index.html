@@ -20,7 +20,7 @@
         <tr>
             <td>{{ code }}</td>
             <td>{{ product.description }}</td>
-            <td>{{ '$ '"{:,.2f}".format(product.price).replace(",", ".") }} </td>
+            <td>{{ '$ {:,.2f}'.format(product.price).replace(',', '.') }} </td>
         </tr>
         {% endfor %}
     </table>
